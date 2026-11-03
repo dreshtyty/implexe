@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Implexe Design — Créations artisanales en pagne wax et perles à Brazzaville. Accessoires de mode uniques et sur mesure." />
+    <meta name="theme-color" content="#E8590C" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Implexe Design | Le style au service de notre culture</title>
+    
+    <!-- Google Fonts pour une typographie haute couture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="assets/hero-grace.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <!-- Bandeau d'annonce supérieur -->
+    <div class="announcement" role="status">
+      <span>✦ Atelier artisanal à Brazzaville</span>
+      <span class="announcement-separator" aria-hidden="true">•</span>
+      <span>Créations sur mesure & personnalisables</span>
+      <span class="announcement-separator" aria-hidden="true">•</span>
+      <span>Livraison Congo & International</span>
+    </div>
+
+    <!-- En-tête de navigation sticky -->
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Accueil Implexe Design">
+        <img src="assets/logo-implexe.png" alt="Logo Implexe Design - Accessoires en pagne" />
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#collections">La Boutique</a>
+        <a href="#personnalisation">Sur Mesure</a>
+        <a href="#evenements">B2B & Fêtes</a>
+        <a href="#maison">Notre Maison</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Bouton QR Code Atelier -->
+        <button class="icon-button" type="button" data-open-qr aria-label="Scanner le QR Code Atelier" title="Scanner le QR Code Atelier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+
+        <!-- Bouton Favoris -->
+        <button class="icon-button" type="button" data-open-favorites aria-label="Voir mes favoris" title="Voir mes favoris">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="count-badge is-hidden" data-favorites-count>0</span>
+        </button>
+
+        <!-- Bouton Panier -->
+        <button class="cart-trigger" type="button" data-open-cart aria-label="Ouvrir le panier">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span aria-hidden="true">Mon Sac</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <!-- Section Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span>✦</span> Implexe Design · Brazzaville
+          </p>
+          <h1 id="hero-title">Le style au service de notre <span>culture.</span></h1>
+          <p class="hero-lead">Des sacs, pochettes, sandales et parures façonnés à la main en pagne wax et perles d'exception. Racontez votre histoire avec élégance.</p>
+          
+          <div class="hero-actions">
+            <a class="button button-primary" href="#collections">
+              Découvrir la boutique
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <button class="button button-outline" type="button" data-open-custom>
+              Créer sur mesure
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <b>100%</b>
+              <span>Fait main à Brazza</span>
+            </div>
+            <div class="stat-item">
+              <b>24h</b>
+              <span>Réactivité WhatsApp</span>
+            </div>
+            <div class="stat-item">
+              <b>Sur-mesure</b>
+              <span>À partir de 12 000 F</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="assets/hero-grace.png" alt="Femme congolaise élégante portant une création Implexe Design" />
+          <div class="hero-stamp" aria-label="Label création artisanale">
+            <div class="stamp-icon">✦</div>
+            <div>
+              <p>Atelier d'Artisanat</p>
+              <b>Brazzaville, Congo</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Réassurance / Engagements -->
+      <section class="assurances reveal" aria-label="Les engagements Implexe Design">
+        <div class="assurance-card">
+          <div class="assurance-icon">✂️</div>
+          <h3>Personnalisation totale</h3>
+          <p>Tissu wax, nuances de couleurs, finitions et broderie de vos initiales selon vos envies.</p>
+        </div>
+        <div class="assurance-card">
+          <div class="assurance-icon">💎</div>
+          <h3>Matières nobles & perles</h3>
+          <p>Pagne sélectionné avec rigueur, perles d'artisanat et cuirs assemblés avec finesse.</p>
+        </div>
+        <div class="assurance-card">
+          <div class="assurance-icon">🤝</div>
+          <h3>Échange direct atelier</h3>
+          <p>Un contact immédiat sur WhatsApp avec nos artisanes pour valider chaque détail avant fabrication.</p>
+        </div>
+        <div class="assurance-card">
+          <div class="assurance-icon">🎁</div>
+          <h3>Cadeau & Prêt-à-offrir</h3>
+          <p>Présentation soignée, idéale pour les cérémonies, mariages et attentions prestigieuses.</p>
+        </div>
+      </section>
+
+      <!-- Section Boutique / Catalogue -->
+      <section class="shop-section" id="collections" aria-labelledby="shop-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Nos Collections</p>
+            <h2 id="shop-title">Des créations qui vous ressemblent</h2>
+          </div>
+          <p>Parcourez notre gamme complète d'accessoires prêts à l'envoi ou confectionnés à la demande par nos artisanes.</p>
+        </div>
+
+        <!-- Filtres et Recherche -->
+        <div class="shop-controls">
+          <div class="filter-list" role="group" aria-label="Filtrer les créations">
+            <button class="filter is-active" type="button" data-filter="all">Toutes nos pièces</button>
+            <button class="filter" type="button" data-filter="sacs">Sacs & Cabas</button>
+            <button class="filter" type="button" data-filter="pochettes">Pochettes</button>
+            <button class="filter" type="button" data-filter="sandales">Sandales & Mules</button>
+            <button class="filter" type="button" data-filter="bijoux">Perles d'Art</button>
+            <button class="filter" type="button" data-filter="ensembles">Ensembles Coordonnés</button>
+            <button class="filter" type="button" data-filter="deco">Maison & Objets</button>
+          </div>
+
+          <label class="search-control">
+            <span class="search-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </span>
+            <input type="search" placeholder="Rechercher une pièce..." data-search aria-label="Rechercher une création" />
+          </label>
+        </div>
+
+        <!-- Grille de produits dynamique -->
+        <div class="product-grid" data-product-grid aria-live="polite"></div>
+
+        <p class="catalogue-note">
+          <strong>✦ Bon à savoir :</strong> Les pièces sur commande font l'objet d'un échange personnalisé avec l'atelier pour ajuster les motifs à vos souhaits. Paiements en Mobile Money (Airtel / MTN) ou à la remise en main propre.
+        </p>
+      </section>
+
+      <!-- Section Création sur mesure -->
+      <section class="custom-section reveal" id="personnalisation" aria-labelledby="custom-title">
+        <div class="custom-image">
+          <img src="assets/collection-accessoires.jpg" alt="Atelier de création avec tissus wax vibrants" />
+          <div class="custom-image-overlay-text">
+            Votre idée,<br />notre <span>savoir-faire.</span>
+          </div>
+        </div>
+        
+        <div class="custom-copy">
+          <p class="eyebrow" style="color: var(--orange-light)">Atelier Haute Création</p>
+          <h2 id="custom-title">Imaginez votre pièce, l'atelier lui donne vie.</h2>
+          <p>Vous souhaitez assortir un sac à une tenue de cérémonie, inscrire un prénom brodé ou marier des perles rares ? Composez votre pièce en direct.</p>
+          
+          <div class="pricing-cards">
+            <div class="pricing-card">
+              <b>Formule Essentielle</b>
+              <div class="price">12 000 FCFA</div>
+              <p>Wax de premier choix, coupe artisanale soignée, finitions intérieures doublées.</p>
+            </div>
+            <div class="pricing-card">
+              <b>Formule Élaborée</b>
+              <div class="price">15 000 FCFA</div>
+              <p>Broderie de prénom, fermoir luxe or/argent, poignée travaillée ou perles d'ornement.</p>
+            </div>
+          </div>
+
+          <ul class="custom-steps">
+            <li><span class="step-num">1</span> Vous choisissez formule, tissu et nuances de couleurs</li>
+            <li><span class="step-num">2</span> L'atelier prépare et confirme les étoffes sur WhatsApp</li>
+            <li><span class="step-num">3</span> Confection méticuleuse & livraison chez vous à Brazzaville</li>
+          </ul>
+
+          <div>
+            <button class="button button-primary" type="button" data-open-custom>
+              Configurer mon sac sur mesure
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section B2B / Événements / Mariages -->
+      <section class="b2b-section reveal" id="evenements" aria-labelledby="b2b-title">
+        <div class="b2b-inner">
+          <div class="b2b-copy">
+            <p class="eyebrow" style="color: #f7d070">Événements & Commandes Groupées</p>
+            <h2 id="b2b-title">Pour vos mariages, fêtes & cadeaux d'entreprise</h2>
+            <p>Implexe Design conçoit des séries d'accessoires personnalisés pour célébrer vos moments précieux ou valoriser votre image de marque auprès de vos collaborateurs et partenaires.</p>
+            
+            <a class="button button-light" href="https://wa.me/242066727637?text=Bonjour%20Implexe%20Design,%20je%20souhaite%20un%20devis%20pour%20une%20commande%20group%C3%A9e%20(mariage/entreprise)" target="_blank" rel="noreferrer">
+              Demander un devis B2B / Cérémonie
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="b2b-targets">
+            <div class="b2b-item">
+              <b>Mariages & Dots</b>
+              <span>Pochettes et cadeaux invités harmonisés avec les pagnes du cortège.</span>
+            </div>
+            <div class="b2b-item">
+              <b>Entreprises & CSE</b>
+              <span>Cadeaux de fin d'année, tote bags personnalisés avec logo pour vos séminaires.</span>
+            </div>
+            <div class="b2b-item">
+              <b>Associations & Agences</b>
+              <span>Objets décoratifs et accessoires pour foires, galas et célébrations.</span>
+            </div>
+            <div class="b2b-item">
+              <b>Diaspora Congolaise</b>
+              <span>Commandez pour vos proches à Brazzaville ou expédition à l'international.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Notre Maison (Atelier, Marina Omboumbou & Grâce) -->
+      <section class="story-section reveal" id="maison" aria-labelledby="story-title">
+        <div class="story-visual">
+          <img src="assets/perles.jpg" alt="Détail de perles d'artisanat utilisées pour les créations Implexe Design" />
+        </div>
+
+        <div class="story-copy">
+          <p class="eyebrow">Notre Maison</p>
+          <h2 id="story-title">L'artisanat congolais comme signature de style.</h2>
+          <p>Fondée à Brazzaville par <strong>Marina OMBOUMBOU</strong>, Implexe Design est née d'un constat : les femmes et hommes d'aujourd'hui recherchent des créations modernes, authentiques et qui ont du sens.</p>
+          <p>À l'image de <em>Grâce</em>, notre cliente emblématique, nos pièces accompagnent celles et ceux qui souhaitent affirmer leur identité culturelle au travail, en soirée ou lors des grands jours de la vie.</p>
+          
+          <div class="story-founder">
+            <div class="story-founder-info">
+              <b>Marina OMBOUMBOU</b>
+              <span>Créatrice & Promotrice · Brazzaville</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-visual">
+          <img src="assets/atelier.jpg" alt="Artisane Implexe Design confectionnant des accessoires précieux" />
+        </div>
+      </section>
+
+      <!-- Section Contact & Échanges -->
+      <section class="contact-section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="contact-container">
+          <div class="contact-copy">
+            <p class="eyebrow" style="color: #fff">Restons en contact</p>
+            <h2 id="contact-title">Un projet, une question ou une commande urgente ?</h2>
+            <p>Notre atelier vous accueille avec joie. Discutez directement avec nous pour obtenir des conseils sur les tissus, les délais ou les modalités de livraison.</p>
+            
+            <div class="contact-channels">
+              <a class="contact-channel" href="https://wa.me/242066727637" target="_blank" rel="noreferrer">
+                <div class="channel-icon">💬</div>
+                <div>
+                  <b>WhatsApp Direct Atelier</b>
+                  <span>+242 06 672 76 37 (Réponse immédiate)</span>
+                </div>
+              </a>
+
+              <a class="contact-channel" href="tel:+242066727637">
+                <div class="channel-icon">📞</div>
+                <div>
+                  <b>Appel Téléphonique</b>
+                  <span>+242 06 672 76 37</span>
+                </div>
+              </a>
+
+              <a class="contact-channel" href="mailto:mariombou2016@gmail.com">
+                <div class="channel-icon">✉️</div>
+                <div>
+                  <b>Courrier Électronique</b>
+                  <span>mariombou2016@gmail.com</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Écrivez à l'atelier</h3>
+            <p>Remplissez vos coordonnées, votre messagerie s'ouvrira avec votre message pré-rempli.</p>
+            
+            <form class="contact-form" data-contact-form>
+              <label>Votre nom complet
+                <input required name="name" placeholder="Ex. Grâce Malonga" autocomplete="name" />
+              </label>
+              <label>Votre e-mail ou téléphone
+                <input required name="email" placeholder="Ex. grace@exemple.com ou 06..." autocomplete="email" />
+              </label>
+              <label>Votre message ou demande
+                <textarea required name="message" rows="3" placeholder="Décrivez votre envie, modèle ou événement..."></textarea>
+              </label>
+              <button class="button button-primary button-block" type="submit">
+                Envoyer ma demande
+              </button>
+              <p class="form-hint">Réponse sous quelques heures de l'équipe Implexe Design.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Témoignages & Avis Clients -->
+      <section class="reviews-section reveal" aria-labelledby="reviews-title">
+        <div class="section-heading" style="text-align: center">
+          <p class="eyebrow" style="justify-content: center">Retours d'Expérience</p>
+          <h2 id="reviews-title">Ce que nos clientes disent de nous</h2>
+          <p style="margin: 0.6rem auto 0; color: var(--dark-muted); max-width: 500px">Découvrez la satisfaction de celles et ceux qui portent la signature Implexe Design au quotidien.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">« J'ai commandé un sac personnalisé brodé à mon nom pour un gala à Brazzaville. Le wax est d'une qualité remarquable, les coutures sont nettes et la livraison a été ponctuelle. Bravo Marina ! »</p>
+            <div class="review-author">
+              <div class="review-avatar">GM</div>
+              <div class="review-author-info">
+                <b>Grâce M.</b>
+                <span>Cliente fidèle · Bacongo, Brazzaville</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">« Pour le mariage traditionnel de ma sœur, nous avons commandé 15 pochettes assorties au pagne familial. Tous les invités ont été émerveillés par la finesse du travail et les détails perlés. »</p>
+            <div class="review-author">
+              <div class="review-avatar">VN</div>
+              <div class="review-author-info">
+                <b>Vanessa N.</b>
+                <span>Commande de Cérémonie · Brazzaville</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">« Le cabas solaire est devenu mon sac de tous les jours. Spacieux, élégant et robuste. L'échange sur WhatsApp avec l'atelier a été simple, réactif et très professionnel. »</p>
+            <div class="review-author">
+              <div class="review-avatar">PL</div>
+              <div class="review-author-info">
+                <b>Patrick L.</b>
+                <span>Cadeau d'Anniversaire · Pointe-Noire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section FAQ (Questions Fréquentes) -->
+      <section class="faq-section reveal" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading" style="text-align: center">
+          <p class="eyebrow" style="justify-content: center">Besoin d'aide ?</p>
+          <h2 id="faq-title">Foire aux questions</h2>
+          <p style="margin: 0.6rem auto 0; color: var(--dark-muted)">Tout ce que vous devez savoir pour commander vos créations artisanales en toute sérénité.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">Comment fonctionne la livraison à Brazzaville et dans le reste du pays ?</summary>
+            <div class="faq-answer">
+              Nous livrons partout à Brazzaville (Bacongo, Centre-ville, Moungali, Ouenzé, Talangaï...) par coursier ou remise en main propre selon vos disponibilités. Pour Pointe-Noire et les autres villes, nous organisons l'expédition via transporteur de confiance. Les frais et créneaux sont confirmés directement sur WhatsApp.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Quels sont les modes de règlement acceptés ?</summary>
+            <div class="faq-answer">
+              Nous acceptons les règlements par <strong>Mobile Money</strong> (Airtel Money et MTN Mobile Money) pour valider vos créations sur commande. Pour les pièces en stock à Brazzaville, le règlement en espèces lors de la remise en main propre est également possible.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Puis-je apporter mon propre pagne pour une confection sur-mesure ?</summary>
+            <div class="faq-answer">
+              Absolument ! Si vous disposez d'un pagne de cérémonie ou d'une étoffe de famille, notre atelier se charge de le transformer en sac, pochette ou sandales selon le modèle de votre choix. Contactez-nous sur WhatsApp pour convenir du métrage nécessaire.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Quels sont les délais de confection pour les pièces sur commande ?</summary>
+            <div class="faq-answer">
+              Les pièces en stock sont disponibles immédiatement (sous 24h à 48h). Pour les confections personnalisées ou brodées, comptez généralement entre 3 et 7 jours selon la complexité du modèle. Pour les commandes de mariage en grande quantité, nous vous conseillons de commander 2 à 3 semaines à l'avance.
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="#top" aria-label="Retour au sommet">
+            <img src="assets/logo-implexe.png" alt="Implexe Design" />
+          </a>
+          <p>Accessoires en pagne, perles d'artisanat et créations sur mesure.<br /><strong>Brazzaville, République du Congo.</strong></p>
+          <p style="margin-top: 0.6rem; color: var(--orange-light)"><em>« Le style au service de notre culture »</em></p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="#collections">La Boutique</a>
+            <a href="#personnalisation">Personnalisation</a>
+            <a href="#evenements">Commandes B2B & Fêtes</a>
+            <a href="#maison">Notre Histoire</a>
+            <a href="#contact">Contact Atelier</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Catégories</h4>
+          <div class="footer-links">
+            <a href="#collections">Sacs & Cabas Wax</a>
+            <a href="#collections">Pochettes Cérémonie</a>
+            <a href="#collections">Sandales & Mules</a>
+            <a href="#collections">Créations en Perles</a>
+            <a href="#collections">Maison & Décoration</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Réseaux & Atelier</h4>
+          <div class="footer-links">
+            <a href="https://wa.me/242066727637" target="_blank" rel="noreferrer">WhatsApp Business</a>
+            <button type="button" data-open-qr style="background:none;border:none;padding:0;color:rgba(255,255,255,0.75);font-size:0.85rem;text-align:left;cursor:pointer">📱 Scanner le QR Code</button>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook Implexe</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Implexe Design. Tous droits réservés.</span>
+        <span>Création artisanale originale · Promotrice Marina Omboumbou</span>
+      </div>
+    </footer>
+
+    <!-- Tiroir Latéral Panier (Cart Drawer) -->
+    <aside class="cart-drawer" data-cart-drawer aria-label="Votre sac" aria-hidden="true">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow" style="margin:0">Votre sélection</p>
+          <h2>Votre sac</h2>
+        </div>
+        <button class="close-button" type="button" data-close-cart aria-label="Fermer le sac">×</button>
+      </div>
+
+      <div class="cart-items" data-cart-items></div>
+
+      <div class="cart-summary">
+        <div>
+          <span>Total de la commande :</span>
+          <b data-cart-total>0 FCFA</b>
+        </div>
+        <p>✦ Livraison et confirmation des pièces personnalisées organisées directement avec l'atelier.</p>
+        <button class="button button-primary button-block" type="button" data-open-checkout>
+          Passer ma commande
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Toile de fond (Backdrop) -->
+    <div class="backdrop" data-backdrop></div>
+
+    <!-- Modale Fiche Produit (Quick View) -->
+    <dialog class="dialog product-dialog" data-product-dialog aria-labelledby="product-dialog-title"></dialog>
+
+    <!-- Modale Configurateur Sur-Mesure -->
+    <dialog class="dialog custom-dialog" data-custom-dialog aria-labelledby="custom-dialog-title">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">Haute Confection</p>
+          <h2 id="custom-dialog-title">Composez votre sac</h2>
+        </div>
+        <button class="close-button" type="button" data-close-dialog aria-label="Fermer la fenêtre">×</button>
+      </div>
+
+      <form class="custom-form" data-custom-form>
+        <div class="custom-form-grid">
+          <label>Formule de création
+            <select name="formula" data-custom-price>
+              <option value="12000">Sac personnalisé classique · 12 000 FCFA</option>
+              <option value="15000">Sac personnalisé élaboré (broderie & perles) · 15 000 FCFA</option>
+            </select>
+          </label>
+
+          <label>Choix du motif textile
+            <select name="fabric">
+              <option>Wax solaire (tons chauds jaune/orange)</option>
+              <option>Wax géométrique Kente (multicolore)</option>
+              <option>Pagne floral bleu & rose</option>
+              <option>Teinture Tie-Dye artisanale</option>
+              <option>À choisir ensemble sur WhatsApp</option>
+            </select>
+          </label>
+
+          <label class="wide">Nuances & Couleurs dominantes
+            <input required name="colors" placeholder="Ex. Orange, noir et touches dorées" />
+          </label>
+
+          <label>Finition décorative
+            <select name="detail">
+              <option>Fermoir doré prestigieux</option>
+              <option>Poignée tressée en pagne</option>
+              <option>Chaîne métallique argentée</option>
+              <option>Ornements en perles artisanales</option>
+              <option>À définir selon modèle</option>
+            </select>
+          </label>
+
+          <label>Prénom ou Initiales à broder
+            <input name="note" placeholder="Ex. Préface ou Initiales M.O." />
+          </label>
+        </div>
+
+        <div class="custom-form-footer">
+          <div>
+            <span style="font-size: 0.8rem; color: var(--dark-muted)">Montant de votre formule :</span>
+            <b data-custom-total>12 000 FCFA</b>
+          </div>
+          <button class="button button-primary" type="submit">
+            Ajouter à mon sac
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Modale Validation de Commande (Checkout) -->
+    <dialog class="dialog checkout-dialog" data-checkout-dialog aria-labelledby="checkout-dialog-title">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">Finalisation</p>
+          <h2 id="checkout-dialog-title">Vos coordonnées de livraison</h2>
+        </div>
+        <button class="close-button" type="button" data-close-dialog aria-label="Fermer la fenêtre">×</button>
+      </div>
+
+      <form class="checkout-form" data-checkout-form>
+        <div class="checkout-grid">
+          <label>Nom & Prénom
+            <input required name="customerName" placeholder="Ex. Grâce Malonga" autocomplete="name" />
+          </label>
+
+          <label>Téléphone / WhatsApp (indispensable)
+            <input required name="phone" type="tel" placeholder="Ex. 06 672 76 37" autocomplete="tel" />
+          </label>
+
+          <label class="wide">Adresse e-mail
+            <input required type="email" name="email" placeholder="votre@email.com" autocomplete="email" />
+          </label>
+
+          <label class="wide">Quartier ou Adresse de remise à Brazzaville
+            <textarea required name="address" rows="2" placeholder="Ex. Bacongo, Moungali, Poto-Poto, Centre-ville..."></textarea>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Mode de règlement souhaité</legend>
+          <label class="radio-option">
+            <input checked type="radio" name="payment" value="Mobile Money (Airtel / MTN)" />
+            <span>Mobile Money (Airtel Money ou MTN Mobile Money)</span>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="payment" value="Paiement à la livraison (Espèces)" />
+            <span>Paiement en espèces à la livraison</span>
+          </label>
+        </fieldset>
+
+        <div class="checkout-total">
+          <span>Total à régler :</span>
+          <b data-checkout-total>0 FCFA</b>
+        </div>
+
+        <button class="button button-primary button-block" type="submit">
+          Confirmer ma demande & Transmettre sur WhatsApp
+        </button>
+        <p class="form-hint">Un récapitulatif officiel sera préparé et envoyé à notre atelier.</p>
+      </form>
+    </dialog>
+
+    <!-- Modale de Confirmation Réussie -->
+    <dialog class="dialog success-dialog" data-success-dialog aria-labelledby="success-dialog-title">
+      <div class="success-mark" aria-hidden="true">✓</div>
+      <p class="eyebrow" style="color: #25d366">Commande transmise avec succès</p>
+      <h2 id="success-dialog-title">Merci, <span data-success-name></span> !</h2>
+      <p data-success-message>Votre bon de commande est prêt.</p>
+      <a class="button button-whatsapp button-block" data-whatsapp-order target="_blank" rel="noreferrer">
+        Envoyer le récapitulatif sur WhatsApp
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.076-1.802-.409-1.393-.579-2.313-1.996-2.383-2.091-.07-.095-.568-.755-.568-1.439 0-.684.358-1.021.485-1.161.127-.14.278-.175.371-.175.093 0 .186.001.267.005.087.004.204-.033.319.243.116.276.394.962.429 1.033.035.07.058.152.012.245-.047.093-.07.151-.139.233-.07.081-.147.18-.21.242-.07.07-.143.146-.062.286.082.14.364.6.782.973.539.48 0.993.629 1.133.699.14.07.221.058.303-.035.081-.094.35-.407.443-.547.093-.14.186-.117.314-.07.128.046.812.383.952.453.14.07.233.105.267.163.035.058.035.337-.109.742z"/></svg>
+      </a>
+      <button class="button button-outline button-block" style="margin-top:0.6rem" type="button" data-print-order>
+        Imprimer mon Bon de Commande (PDF)
+      </button>
+      <button class="button button-light button-block" style="margin-top:0.6rem" type="button" data-close-dialog>
+        Continuer la visite du site
+      </button>
+    </dialog>
+
+    <!-- Modale QR Code Atelier -->
+    <dialog class="dialog qr-dialog" data-qr-dialog aria-labelledby="qr-dialog-title">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow" style="margin:0">Atelier WhatsApp</p>
+          <h2 id="qr-dialog-title">Scanner pour échanger</h2>
+        </div>
+        <button class="close-button" type="button" data-close-dialog aria-label="Fermer">×</button>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--dark-muted); margin-top: 1rem">Scannez ce QR Code avec votre téléphone pour ouvrir la discussion directe avec Marina Omboumbou et notre atelier.</p>
+      <div class="qr-box">
+        <img src="assets/qr-code-whatsapp.svg" alt="QR Code WhatsApp Implexe Design" />
+      </div>
+      <p style="font-size: 0.9rem; font-weight: 800; color: var(--orange); margin-bottom: 0.3rem">+242 06 672 76 37</p>
+      <p style="font-size: 0.75rem; color: var(--dark-muted); margin: 0 0 1.2rem">Atelier ouvert du lundi au samedi à Brazzaville</p>
+      <button class="button button-primary button-block" type="button" data-close-dialog>
+        Fermer la fenêtre
+      </button>
+    </dialog>
+
+    <!-- Conteneur d'impression invisible (apparaît uniquement à l'impression) -->
+    <div id="printable-receipt" class="printable-receipt"></div>
+
+    <!-- Bouton flottant WhatsApp Atelier -->
+    <a class="floating-whatsapp" href="https://wa.me/242066727637?text=Bonjour%20Implexe%20Design,%20j%27aimerais%20des%20renseignements%20sur%20vos%20cr%C3%A9ations." target="_blank" rel="noreferrer" aria-label="Discuter directement sur WhatsApp avec l'atelier" title="Discuter avec l'atelier sur WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.076-1.802-.409-1.393-.579-2.313-1.996-2.383-2.091-.07-.095-.568-.755-.568-1.439 0-.684.358-1.021.485-1.161.127-.14.278-.175.371-.175.093 0 .186.001.267.005.087.004.204-.033.319.243.116.276.394.962.429 1.033.035.07.058.152.012.245-.047.093-.07.151-.139.233-.07.081-.147.18-.21.242-.07.07-.143.146-.062.286.082.14.364.6.782.973.539.48 0.993.629 1.133.699.14.07.221.058.303-.035.081-.094.35-.407.443-.547.093-.14.186-.117.314-.07.128.046.812.383.952.453.14.07.233.105.267.163.035.058.035.337-.109.742z"/></svg>
+    </a>
+
+    <!-- Notification Toast -->
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
